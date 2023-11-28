@@ -1,16 +1,18 @@
 import React from "react";
+import {TaskList} from "./TaskList";
+import {TaskAdd} from "./TaskAdd";
 import {Component} from "react";
 
-import 'src/style/index.css'
-import {TaskAdd} from "./TaskAdd";
+import 'src/style/App.css'
 
 export class App extends Component {
 
     render() {
         return (
             <div className='Conteiner'>
-                TODO App
+                TO DO App
                 <TaskAdd/>
+                <TaskList/>
             </div>
         )
     }
