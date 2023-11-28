@@ -7,9 +7,22 @@ import 'src/style/App.css'
 
 export class App extends Component {
 
+    state = {
+        tasks: [
+            {
+                id: 0,
+                text: 'Isc do sklepu',
+                date: '2023-11-28',
+                important: true,
+                active: true,
+                finishDate: null
+            },
+        ]
+    }
+
     render() {
         return (
-            <div className='Conteiner'>
+            <div className='App__conteiner'>
                 TO DO App
                 <TaskAdd/>
                 <TaskList/>
