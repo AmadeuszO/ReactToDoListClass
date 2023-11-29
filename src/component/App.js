@@ -17,6 +17,30 @@ export class App extends Component {
                 active: true,
                 finishDate: null
             },
+            {
+                id: 1,
+                text: 'zrobić angielski',
+                date: '2023-11-28',
+                important: false,
+                active: true,
+                finishDate: null
+            },
+            {
+                id: 2,
+                text: 'Isc na siłownie',
+                date: '2023-11-28',
+                important: true,
+                active: true,
+                finishDate: null
+            },
+            {
+                id: 3,
+                text: 'Pakować sie',
+                date: '2023-11-28',
+                important: true,
+                active: true,
+                finishDate: '2023-12-08',
+            },
         ]
     }
 
@@ -25,7 +49,7 @@ export class App extends Component {
             <div className='App__conteiner'>
                 TO DO App
                 <TaskAdd/>
-                <TaskList/>
+                <TaskList tasks={this.state.tasks}/>
             </div>
         )
     }
