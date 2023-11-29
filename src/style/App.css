@@ -6,3 +6,14 @@ body {
     width: 800px;
     height: 500px;
 }
+
+.task-list__active{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+p{
+    padding: 1em 0;
+}
