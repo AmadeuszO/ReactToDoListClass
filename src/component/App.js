@@ -3,7 +3,7 @@ import {TaskList} from "./TaskList";
 import {TaskAdd} from "./TaskAdd";
 import {Component} from "react";
 
-import 'src/style/App.css'
+import '../style/App.css'
 
 export class App extends Component {
 

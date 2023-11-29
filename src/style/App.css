@@ -1,0 +1,8 @@
+body {
+    background-color: gray;
+}
+
+.App__conteiner {
+    width: 800px;
+    height: 500px;
+}
