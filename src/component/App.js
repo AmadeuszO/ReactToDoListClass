@@ -44,12 +44,22 @@ export class App extends Component {
         ]
     }
 
+
+    deleteTask = (id) =>{
+        console.log(`delete element id: ${id}`)
+    }
+
+    statusTask = (id) =>{
+        console.log(`change element id: ${id}`)
+    }
+
     render() {
         return (
             <div className='App__conteiner'>
                 TO DO App
                 <TaskAdd/>
-                <TaskList tasks={this.state.tasks}/>
+                <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.statusTask}/>
+                }}
             </div>
         )
     }

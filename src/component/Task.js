@@ -2,14 +2,14 @@ import React from "react";
 
 export const Task = (props) => {
 
-    const {text,date} = props.task;
+    const {text, date, id} = props.task;
 
     return <>
         <div>
             <p>
                 <strong>{text}</strong> - do <span>{date}</span>
-                <button onClick={() => console.log('Działa')}>Zostało zrobione</button>
-                <button onClick={() => console.log('Nie działa')}>X</button>
+                <button onClick={() => props.change(id)}>Zostało zrobione</button>
+                <button onClick={() => props.delete(id)}>X</button>
             </p>
         </div>
     </>

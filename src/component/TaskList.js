@@ -4,7 +4,7 @@ import {Task} from "./Task";
 export const TaskList = (props) => {
 
     const tasks = props.tasks.map(task => {
-        return <Task key={task.id} task={task}/>
+        return <Task key={task.id} task={task} delete={props.delete} change={props.change}/>
     })
 
     return <>
